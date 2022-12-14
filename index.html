@@ -366,30 +366,7 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">t_onReady(function () {
-                    var rec = document.getElementById('rec526291954');
-                    if (!rec) return;
-                    t_onFuncLoad('t570_init', function () {
-                        t570_init('526291954');
-                    });
-                    if (typeof jQuery !== 'undefined') {
-                        $('.t570').bind('displayChanged', function () {
-                            fireRefreshEventOnWindow();
-                        });
-                    } else {
-                        var wrapperBlock = rec.querySelector('.t570');
-                        if (wrapperBlock) {
-                            wrapperBlock.addEventListener('displayChanged', function () {
-                                fireRefreshEventOnWindow();
-                            });
-                        }
-                    }
-                });
-                function fireRefreshEventOnWindow() {
-                    var event = document.createEvent('HTMLEvents');
-                    event.initEvent('resize', true, false);
-                    window.dispatchEvent(event);
-                }</script>
+    
         </div>
     </div>
 </body>
