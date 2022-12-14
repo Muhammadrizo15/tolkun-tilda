@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:image"
         content="./static.tildacdn.info/tild3934-6630-4538-b065-376233386438/-/resize/504x/k46jj04884l261015_2.jpg" />
-    <link rel="canonical" href="index.html"><!--/metatextblock-->
+    <link rel="canonical" href="index.html">
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="dns-prefetch" href="https://ws.tildacdn.com/">
@@ -35,7 +35,7 @@
         onerror="this.loaderr='y';" />
 </head>
 
-<body class="t-body" style="margin:0;"><!--allrecords-->
+<body class="t-body" style="margin:0;">
     <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6316650"
         data-tilda-page-id="32561733" data-tilda-formskey="fcb90c661408f0952af1348ae6316650" data-tilda-lazy="yes">
         <div id="rec526291946" class="r t-rec" style=" " data-animationappear="off" data-record-type="205">
@@ -231,41 +231,6 @@
                                                         d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z"
                                                         fill="#ffffff" />
                                                 </svg></a></div> <!-- /new soclinks -->
-                                        <script>
-                                            t_onReady(function () {
-                                                var rec = document.getElementById('rec526291954');
-                                                if (!rec) return;
-                                                var customImageList = rec.querySelectorAll('img.t-sociallinks__customimg');
-                                                Array.prototype.forEach.call(customImageList, function (img) {
-                                                    var imgURL = img.getAttribute('src');
-                                                    if (imgURL.indexOf('/lib__tildaicon__') !== -1 || imgURL.indexOf('http://bishkek365.tilda.ws/lib/tildaicon/') !== -1) {
-                                                        var xhr = new XMLHttpRequest();
-                                                        xhr.open('http://bishkek365.tilda.ws/GET', imgURL);
-                                                        xhr.responseType = 'document';
-                                                        xhr.onload = function () {
-                                                            if (xhr.status >= 200 && xhr.status < 400) {
-                                                                var response = xhr.response;
-                                                                var svg = response.querySelector('svg');
-                                                                svg.style.width = '30px';
-                                                                svg.style.height = '30px';
-                                                                var figureList = svg.querySelectorAll('*:not(g):not(title):not(desc)');
-                                                                for (var j = 0; j < figureList.length; j++) {
-                                                                    figureList[j].style.fill = '#ffffff';
-                                                                }
-                                                                img.parentNode.append(svg);
-                                                                img.remove();
-                                                            } else {
-                                                                img.style.visibility = 'visible';
-                                                            }
-                                                        }
-                                                        xhr.onerror = function (error) {
-                                                            img.style.visibility = 'visible';
-                                                        }
-                                                        xhr.send();
-                                                    }
-                                                });
-                                            });
-                                        </script>
                                     </div>
                                 </div>
                             </div>
