@@ -334,35 +334,6 @@
                             style="width:100%; height:80vh;"
                             data-map-style='[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]'>
                         </div>
-                        <script type="text/javascript"> var arMapMarkers526291954 = [
-                                {
-                                    title: "Bishkek",
-                                    descr: "",
-                                    lat: "42.8916717",
-                                    lng: "74.6022076",
-                                },
-                            ];
-                            t_onReady(function () {
-                                t_map_lazyload_add_map();
-                                window.addEventListener('scroll', t_throttle(t_map_lazyload_add_map, 300));
-                                function t_map_lazyload_add_map() {
-                                    var windowHeight = window.innerHeight;
-                                    var scrollDiffHeigth = 700;
-                                    var rec = document.getElementById('rec' + 526291954);
-                                    if (!rec) return;
-                                    var map = rec.querySelector('.t-map-lazyload');
-                                    if (!map) return;
-                                    var blockTop = map.getBoundingClientRect().top + window.pageYOffset;
-                                    if (window.pageYOffset > blockTop - windowHeight - scrollDiffHeigth) {
-                                        if (map.getAttribute('data-maplazy-load') === 'false') {
-                                            map.setAttribute('data-maplazy-load', 'true');
-                                            t_onFuncLoad('t_appendYandexMap', function () {
-                                                t_appendYandexMap("526291954", "");
-                                            });
-                                        }
-                                    }
-                                }
-                            });</script>
                     </div>
                 </div>
             </div>
